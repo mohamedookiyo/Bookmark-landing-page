@@ -1,0 +1,99 @@
+/*************************************
+COLOR
+*************************************/
+/*************************************
+TYPOGRAPHY
+*************************************/
+/*************************************
+LAYOUT
+*************************************/
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1.4;
+  font-size: 1.8rem;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #9194a1;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 3rem;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+}
+
+.nav__links {
+  color: #252b46;
+  font-size: 1.35rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav__links:not(:last-child) {
+  margin-right: 4rem;
+  padding: 1.4rem 0;
+}
+
+.nav__links:hover {
+  color: #fa5757;
+}
+
+.btn {
+  border-radius: 0.5rem;
+}
+
+.btn__login {
+  background-color: #fa5757;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 1.2rem 3.2rem;
+  border: 0.2rem solid #fa5757;
+}
+
+.btn__login:hover {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+/*# sourceMappingURL=main.css.map */

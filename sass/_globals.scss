@@ -1,0 +1,26 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $rubik;
+  line-height: 1.4;
+  font-size: $body-copy;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: $grayish-blue;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}

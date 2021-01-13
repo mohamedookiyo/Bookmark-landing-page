@@ -1,0 +1,15 @@
+.btn {
+  border-radius: 0.5rem;
+  &__login {
+    background-color: $soft-red;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 1.2rem 3.2rem;
+    border: 0.2rem solid $soft-red;
+
+    &:hover {
+      background-color: #ffffff;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  }
+}
