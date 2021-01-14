@@ -1,15 +1,50 @@
 .btn {
+  font-weight: 500;
+  color: #ffffff;
+  border: 0.2rem solid;
   border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+
   &__login {
     background-color: $soft-red;
     color: #ffffff;
-    font-weight: 500;
     padding: 1.2rem 3.2rem;
-    border: 0.2rem solid $soft-red;
+    border-color: $soft-red;
 
     &:hover {
       background-color: #ffffff;
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      box-shadow: $btn-hover-shadow;
+    }
+  }
+
+  &--blue,
+  &--grey {
+    font-size: 1.5rem;
+    padding: 1.6rem 2.6rem;
+  }
+
+  &--blue {
+    background-color: $soft-blue;
+    margin-right: 1.5rem;
+    border-color: $soft-blue;
+
+    &:hover {
+      background-color: #ffffff;
+      color: $soft-blue;
+      box-shadow: $btn-hover-shadow;
+    }
+  }
+
+  &--grey {
+    background-color: lighten($grayish-blue, 35%);
+    color: lighten($very-dark-blue, 15%);
+    border-color: lighten($grayish-blue, 35%);
+    box-shadow: $btn-hover-shadow;
+
+    &:hover {
+      background-color: #ffffff;
+      border-color: lighten($very-dark-blue, 15%);
     }
   }
 }

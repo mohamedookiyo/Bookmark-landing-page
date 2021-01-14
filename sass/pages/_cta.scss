@@ -1,0 +1,38 @@
+.cta {
+  display: flex;
+  align-items: center;
+  max-width: 120rem;
+  margin: 10rem auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -1.1rem;
+    width: 60rem;
+    height: 32rem;
+    background-color: $soft-blue;
+    border-radius: 0 0 0 30rem;
+    z-index: -1;
+  }
+
+  &__header {
+    color: $very-dark-blue;
+    font-size: 3.8rem;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+  &__text {
+    margin: 2rem 0 4rem;
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+
+    & img {
+      transform: translateX(3rem);
+    }
+  }
+}

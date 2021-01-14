@@ -5,6 +5,9 @@ COLOR
 TYPOGRAPHY
 *************************************/
 /*************************************
+BOX SHADOWS
+*************************************/
+/*************************************
 LAYOUT
 *************************************/
 html {
@@ -34,10 +37,11 @@ body {
 .container {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 5rem;
 }
 
 .header {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .header .container {
@@ -47,7 +51,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem 0;
 }
 
 .header__logo {
@@ -80,20 +83,104 @@ body {
 }
 
 .btn {
+  font-weight: 500;
+  color: #ffffff;
+  border: 0.2rem solid;
   border-radius: 0.5rem;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .btn__login {
   background-color: #fa5757;
   color: #ffffff;
-  font-weight: 500;
   padding: 1.2rem 3.2rem;
-  border: 0.2rem solid #fa5757;
+  border-color: #fa5757;
 }
 
 .btn__login:hover {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn--blue, .btn--grey {
+  font-size: 1.5rem;
+  padding: 1.6rem 2.6rem;
+}
+
+.btn--blue {
+  background-color: #5368df;
+  margin-right: 1.5rem;
+  border-color: #5368df;
+}
+
+.btn--blue:hover {
+  background-color: #ffffff;
+  color: #5368df;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn--grey {
+  background-color: #f1f2f3;
+  color: #3f4a78;
+  border-color: #f1f2f3;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn--grey:hover {
+  background-color: #ffffff;
+  border-color: #3f4a78;
+}
+
+.cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 120rem;
+  margin: 10rem auto;
+}
+
+.cta::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1.1rem;
+  width: 60rem;
+  height: 32rem;
+  background-color: #5368df;
+  border-radius: 0 0 0 30rem;
+  z-index: -1;
+}
+
+.cta__header {
+  color: #252b46;
+  font-size: 3.8rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.cta__text {
+  margin: 2rem 0 4rem;
+}
+
+.cta__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cta__details img {
+  -webkit-transform: translateX(3rem);
+          transform: translateX(3rem);
 }
 /*# sourceMappingURL=main.css.map */
