@@ -36,6 +36,12 @@
     }
   }
 
+  &__download {
+    font-size: 1.4rem;
+    margin-right: 0;
+    padding: 1.3rem 3.4rem;
+  }
+
   &--grey {
     background-color: lighten($grayish-blue, 35%);
     color: lighten($very-dark-blue, 15%);

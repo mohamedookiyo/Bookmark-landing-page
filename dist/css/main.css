@@ -40,6 +40,16 @@ body {
   padding: 0 5rem;
 }
 
+.tf-y-4 {
+  -webkit-transform: translateY(4rem);
+          transform: translateY(4rem);
+}
+
+.tf-y-8 {
+  -webkit-transform: translateY(8rem);
+          transform: translateY(8rem);
+}
+
 @-webkit-keyframes tab {
   from {
     opacity: 0;
@@ -151,6 +161,12 @@ body {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+.btn__download {
+  font-size: 1.4rem;
+  margin-right: 0;
+  padding: 1.3rem 3.4rem;
+}
+
 .btn--grey {
   background-color: #f1f2f3;
   color: #3f4a78;
@@ -162,6 +178,42 @@ body {
 .btn--grey:hover {
   background-color: #ffffff;
   border-color: #3f4a78;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  padding: 5rem 0 3.5rem;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 1.5rem 1.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+.card__content {
+  margin: 2.5rem 0;
+}
+
+.card__header {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #252b46;
+  margin-bottom: 0.5rem;
+}
+
+.card__text {
+  font-size: 1.5rem;
+}
+
+.card__image {
+  display: block;
+  margin: 3.5rem 0;
 }
 
 .cta {
@@ -210,6 +262,38 @@ body {
 .cta__details img {
   -webkit-transform: translateX(3rem);
           transform: translateX(3rem);
+}
+
+.download {
+  margin: 18rem 0;
+}
+
+.download__header {
+  max-width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.download__heading {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #252b46;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.download__text {
+  margin-bottom: 6rem;
+}
+
+.download__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 5rem;
 }
 
 .features {

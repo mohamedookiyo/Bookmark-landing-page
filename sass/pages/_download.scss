@@ -1,0 +1,27 @@
+.download {
+  margin: 18rem 0;
+
+  &__header {
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: $very-dark-blue;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__text {
+    margin-bottom: 6rem;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 5rem;
+  }
+}

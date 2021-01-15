@@ -26,6 +26,14 @@ body {
   padding: 0 5rem;
 }
 
+.tf-y-4 {
+  transform: translateY(4rem);
+}
+
+.tf-y-8 {
+  transform: translateY(8rem);
+}
+
 @keyframes tab {
   from {
     opacity: 0;
