@@ -13,7 +13,7 @@ html {
 
 body {
   font-family: $rubik;
-  line-height: 1.4;
+  line-height: 1.6;
   font-size: $body-copy;
   font-weight: 400;
   background-color: #ffffff;
@@ -41,8 +41,19 @@ body {
   }
 
   to {
-    display: block;
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@keyframes showAnswer {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

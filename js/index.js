@@ -1,3 +1,5 @@
+/***** FEATURES section *****/
+
 // Indicators and tabs [array]
 const tabIndicators = document.querySelectorAll("[data-tab-target]");
 const tabs = document.querySelectorAll("[data-tab-content]");
@@ -22,5 +24,45 @@ tabIndicators.forEach((tabIndicator) => {
     const activeTab = document.querySelector(tabIndicator.dataset.tabTarget);
     // Add active class the to current tab
     activeTab.classList.add("features__tab--active");
+  });
+});
+
+/***** FAQ section *****/
+
+//  Questions, icons and answers [array]
+const faqQuestions = document.querySelectorAll(".faq__btn");
+const faqIcons = document.querySelectorAll(".faq__image");
+const faqAnswers = document.querySelectorAll(".faq__answer");
+
+// Loop through buttons and add click event handler
+faqQuestions.forEach((faqQuestion) => {
+  faqQuestion.addEventListener("click", () => {
+    // Current question icon
+    const CurrentFaqIcon = faqQuestion.children[0].children[0];
+
+    // Current question answer
+    const currentAnswerToShow = faqQuestion.parentElement.nextElementSibling;
+
+    // Loop through icons and remove the active class
+    faqIcons.forEach((faqIcon) => {
+      // If and only if user clicks another faq question
+      if (faqIcon !== CurrentFaqIcon) {
+        faqIcon.classList.remove("active");
+      }
+    });
+
+    // Loop through answers and remove the active class
+    faqAnswers.forEach((faqAnswer) => {
+      // If and only if user clicks another faq question
+      if (faqAnswer !== currentAnswerToShow) {
+        faqAnswer.classList.remove("active");
+      }
+    });
+
+    // Rotate icon and change stroke color
+    CurrentFaqIcon.classList.toggle("active");
+
+    // Show answer
+    currentAnswerToShow.classList.toggle("active");
   });
 });

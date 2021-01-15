@@ -27,7 +27,7 @@ html {
 
 body {
   font-family: "Rubik", sans-serif;
-  line-height: 1.4;
+  line-height: 1.6;
   font-size: 1.8rem;
   font-weight: 400;
   background-color: #ffffff;
@@ -57,7 +57,6 @@ body {
             transform: scale(0.7);
   }
   to {
-    display: block;
     opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -71,10 +70,35 @@ body {
             transform: scale(0.7);
   }
   to {
-    display: block;
     opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@-webkit-keyframes showAnswer {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes showAnswer {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -144,8 +168,8 @@ body {
 }
 
 .btn--blue, .btn--grey {
-  font-size: 1.5rem;
-  padding: 1.6rem 2.6rem;
+  font-size: 1.4rem;
+  padding: 1.3rem 2.2rem;
 }
 
 .btn--blue {
@@ -241,13 +265,13 @@ body {
 
 .cta__header {
   color: #252b46;
-  font-size: 3.8rem;
+  font-size: 4.6rem;
   font-weight: 500;
   line-height: 1.1;
 }
 
 .cta__text {
-  margin: 2rem 0 4rem;
+  margin: 2.5rem 0 4rem;
 }
 
 .cta__details {
@@ -278,8 +302,7 @@ body {
   font-size: 3.2rem;
   font-weight: 500;
   color: #252b46;
-  letter-spacing: 0.1rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .download__text {
@@ -294,6 +317,112 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 0 5rem;
+}
+
+.faq {
+  margin: 24rem 0 14rem;
+}
+
+.faq__header {
+  max-width: 45%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.faq__heading {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #252b46;
+  margin-bottom: 1.5rem;
+}
+
+.faq__text {
+  margin-bottom: 5rem;
+}
+
+.faq__content {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.faq__question {
+  border-bottom: 0.1rem solid #ddd;
+}
+
+.faq__question:first-child {
+  border-top: 0.1rem solid #ddd;
+}
+
+.faq__btn {
+  font-family: "Rubik", sans-serif;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #252b46;
+  font-size: 1.9rem;
+  font-weight: 400;
+  width: 100%;
+  padding: 2.4rem 0;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.faq__btn:hover {
+  color: #fa5757;
+}
+
+.faq__icon {
+  margin-right: 2.5rem;
+}
+
+.faq__image {
+  stroke: #5368df;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.faq__image.active {
+  stroke: #fa5757;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.faq__answer {
+  display: none;
+  margin-top: 1rem;
+}
+
+.faq__answer.active {
+  display: block;
+  -webkit-animation: showAnswer 0.4s ease-in-out;
+          animation: showAnswer 0.4s ease-in-out;
+}
+
+.faq__answer-text {
+  color: #6a6d7c;
+  font-size: 1.65rem;
+  line-height: 2;
+  padding-bottom: 3rem;
+}
+
+.faq__cta {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.faq__cta > a {
+  margin-right: 0;
 }
 
 .features {
@@ -324,8 +453,7 @@ body {
   font-size: 3.2rem;
   font-weight: 500;
   color: #252b46;
-  letter-spacing: 0.1rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .features__text {
@@ -406,11 +534,9 @@ body {
   font-size: 3.2rem;
   font-weight: 500;
   color: #252b46;
-  letter-spacing: 0.1rem;
-  margin-top: -2.5rem;
 }
 
 .features__cta-text {
-  margin: 2.5rem 0 5rem;
+  margin: 1.5rem 0 4rem;
 }
 /*# sourceMappingURL=main.css.map */

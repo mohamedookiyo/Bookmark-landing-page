@@ -1,0 +1,95 @@
+.faq {
+  margin: 24rem 0 14rem;
+
+  &__header {
+    max-width: 45%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: $very-dark-blue;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    margin-bottom: 5rem;
+  }
+
+  &__content {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  &__question {
+    border-bottom: 0.1rem solid #ddd;
+
+    &:first-child {
+      border-top: 0.1rem solid #ddd;
+    }
+  }
+
+  &__btn {
+    font-family: $rubik;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $very-dark-blue;
+    font-size: 1.9rem;
+    font-weight: 400;
+    width: 100%;
+    padding: 2.4rem 0;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      color: $soft-red;
+    }
+  }
+
+  &__icon {
+    margin-right: 2.5rem;
+  }
+
+  &__image {
+    stroke: $soft-blue;
+    transition: all 0.4s ease-in-out;
+
+    &.active {
+      stroke: $soft-red;
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__answer {
+    display: none;
+    margin-top: 1rem;
+
+    &.active {
+      display: block;
+      animation: showAnswer 0.4s ease-in-out;
+    }
+
+    &-text {
+      color: darken($grayish-blue, 15%);
+      font-size: 1.65rem;
+      line-height: 2;
+      padding-bottom: 3rem;
+    }
+  }
+
+  &__cta {
+    margin-top: 6rem;
+    text-align: center;
+
+    & > a {
+      margin-right: 0;
+    }
+  }
+}
