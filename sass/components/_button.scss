@@ -6,7 +6,8 @@
   text-decoration: none;
   transition: all 0.4s ease-in-out;
 
-  &__login {
+  &__login,
+  &__form {
     background-color: $soft-red;
     color: #ffffff;
     padding: 1.2rem 3.2rem;
@@ -51,6 +52,22 @@
     &:hover {
       background-color: #ffffff;
       border-color: lighten($very-dark-blue, 15%);
+    }
+  }
+
+  &__form {
+    font-family: $rubik;
+    font-size: 1.4rem;
+    align-self: flex-start;
+    padding: 1.4rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $soft-red;
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 }

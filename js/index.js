@@ -66,3 +66,37 @@ faqQuestions.forEach((faqQuestion) => {
     currentAnswerToShow.classList.toggle("active");
   });
 });
+
+/***** FORM section *****/
+
+// Form variables
+const form = document.querySelector("form");
+const formGroup = document.querySelector(".form__group");
+const formIcon = document.querySelector(".form__icon");
+const formError = document.querySelector(".form__group-error");
+
+// Submit event handler
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  // Input field value
+  let inputValue = document.querySelector("input[type='email']").value;
+
+  if (inputValue === "") {
+    // Show error message
+    formGroup.classList.add("active");
+    formIcon.style.display = "block";
+    formError.classList.add("active");
+  } else {
+    formGroup.classList.remove("active");
+    formIcon.style.display = "none";
+    formError.classList.remove("active");
+
+    // Clear input field
+    document.querySelector("input[type='email']").value = "";
+
+    setTimeout(() => {
+      alert("Thanks for contacting us!");
+    }, 100);
+  }
+});
