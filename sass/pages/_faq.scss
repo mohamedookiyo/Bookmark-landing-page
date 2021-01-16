@@ -1,10 +1,18 @@
 .faq {
   margin: 24rem 0 14rem;
 
+  @media (max-width: $mobile-width) {
+    margin: 28rem 0 18rem;
+  }
+
   &__header {
     max-width: 45%;
     text-align: center;
     margin: 0 auto;
+
+    @media (max-width: $mobile-width) {
+      max-width: 100%;
+    }
   }
 
   &__heading {
@@ -12,6 +20,11 @@
     font-weight: 500;
     color: $very-dark-blue;
     margin-bottom: 1.5rem;
+
+    @media (max-width: $mobile-width) {
+      font-size: 2.6rem;
+      line-height: 1.4;
+    }
   }
 
   &__text {
@@ -21,6 +34,10 @@
   &__content {
     max-width: 50%;
     margin: 0 auto;
+
+    @media (max-width: $mobile-width) {
+      max-width: 100%;
+    }
   }
 
   &__question {
@@ -28,6 +45,11 @@
 
     &:first-child {
       border-top: 0.1rem solid #ddd;
+
+      @media (max-width: $mobile-width) {
+        border: none;
+        border-bottom: 0.1rem solid #ddd;
+      }
     }
   }
 
@@ -87,6 +109,10 @@
   &__cta {
     margin-top: 6rem;
     text-align: center;
+
+    @media (max-width: $mobile-width) {
+      margin-top: 8rem;
+    }
 
     & > a {
       margin-right: 0;

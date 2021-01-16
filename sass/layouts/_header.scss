@@ -14,6 +14,10 @@
 }
 
 .nav {
+  @media (max-width: $mobile-width) {
+    display: none;
+    flex-direction: column;
+  }
   &__links {
     color: $very-dark-blue;
     font-size: 1.35rem;
@@ -25,10 +29,116 @@
     &:not(:last-child) {
       margin-right: 4rem;
       padding: 1.4rem 0;
+
+      @media (max-width: $mobile-width) {
+        margin: 0;
+        padding: 0;
+      }
     }
 
     &:hover {
       color: $soft-red;
     }
+  }
+}
+
+.menu {
+  display: none;
+  &__overlay {
+    background-color: rgba($very-dark-blue, 0.95);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 5rem 3rem;
+    transform: translateY(-100%);
+    z-index: 1000;
+    transition: all 0.6s ease-in-out;
+
+    &.active {
+      transform: translateY(0);
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  &__close img {
+    cursor: pointer;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 4rem;
+
+    &-link {
+      color: #ffffff;
+      font-size: 2rem;
+      width: 100%;
+      padding: 2rem;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      border-bottom: 0.1rem solid $grayish-blue;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        color: $soft-red;
+      }
+
+      &:first-child {
+        border-top: 0.1rem solid $grayish-blue;
+      }
+
+      &.btn {
+        background-color: transparent;
+        border-color: #ffffff;
+        margin-top: 3.2rem;
+
+        &:hover {
+          background-color: $soft-red;
+          color: #ffffff;
+          border-color: $soft-red;
+        }
+      }
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & > svg {
+      fill: #ffffff;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        fill: $soft-red;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .menu {
+    display: block;
   }
 }

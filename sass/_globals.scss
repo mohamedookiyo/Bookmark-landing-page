@@ -18,12 +18,20 @@ body {
   font-weight: 400;
   background-color: #ffffff;
   color: $grayish-blue;
+
+  @media (max-width: $mobile-width) {
+    font-size: 1.7rem;
+  }
 }
 
 .container {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 5rem;
+
+  @media (max-width: $mobile-width) {
+    padding: 0 3rem;
+  }
 }
 
 .tf-y-4 {

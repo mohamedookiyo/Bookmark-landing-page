@@ -100,3 +100,17 @@ form.addEventListener("submit", (e) => {
     }, 100);
   }
 });
+
+/***** MENU *****/
+const menuIcon = document.querySelector(".menu svg");
+const closeIcon = document.querySelector(".menu__close img");
+const overlay = document.querySelector(".menu__overlay");
+
+// Click events
+menuIcon.addEventListener("click", () => {
+  overlay.classList.toggle("active");
+});
+
+closeIcon.addEventListener("click", () => {
+  overlay.classList.toggle("active");
+});
