@@ -39,6 +39,11 @@
     &:hover {
       color: $soft-red;
     }
+
+    @media (max-width: $laptop-width) {
+      font-size: 1.3rem;
+      letter-spacing: 0.1rem;
+    }
   }
 }
 

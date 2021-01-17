@@ -3,6 +3,10 @@
   margin-bottom: 12rem;
   padding-bottom: 8rem;
 
+  @media (max-width: $laptop-width) {
+    margin-top: 15rem;
+  }
+
   @media (max-width: $mobile-width) {
     margin-top: 20rem;
     padding-bottom: 0;
@@ -19,7 +23,7 @@
     border-radius: 0 25rem 30rem 0;
     z-index: -1;
 
-    @media (max-width: $mobile-width) {
+    @media (max-width: $laptop-width) {
       display: none;
     }
   }
@@ -28,6 +32,10 @@
     max-width: 50%;
     text-align: center;
     margin: 0 auto;
+
+    @media (max-width: $laptop-width) {
+      max-width: 75%;
+    }
 
     @media (max-width: $mobile-width) {
       max-width: 100%;
@@ -55,6 +63,10 @@
     max-width: 65%;
     margin: 0 auto 8rem;
     border-bottom: 0.1rem solid #eeeeee;
+
+    @media (max-width: $laptop-width) {
+      max-width: 75%;
+    }
 
     @media (max-width: $mobile-width) {
       flex-direction: column;
@@ -120,6 +132,12 @@
     grid-template-columns: 1fr 40%;
     align-items: center;
 
+    @media (max-width: $laptop-width) {
+      grid-template-columns: 1fr 55%;
+      grid-gap: 5rem;
+      align-items: flex-start;
+    }
+
     @media (max-width: $mobile-width) {
       display: flex;
       flex-direction: column;
@@ -127,7 +145,9 @@
   }
 
   &__details {
-    @media (max-width: $mobile-width) {
+    @media (max-width: $laptop-width) {
+      width: 100%;
+
       img {
         width: 100%;
       }
@@ -136,7 +156,7 @@
     &-tab-3 {
       margin-left: 8rem;
 
-      @media (max-width: $mobile-width) {
+      @media (max-width: $laptop-width) {
         margin-left: 0;
       }
     }
@@ -145,8 +165,12 @@
   &__cta {
     padding: 5rem 0;
 
+    @media (max-width: $laptop-width) {
+      padding: 0;
+    }
+
     @media (max-width: $mobile-width) {
-      margin-top: 6rem;
+      margin-top: 1rem;
       padding: 0;
       text-align: center;
     }

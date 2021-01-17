@@ -1,6 +1,10 @@
 .download {
   margin: 18rem 0;
 
+  @media (max-width: $laptop-width) {
+    margin-top: 10rem;
+  }
+
   @media (max-width: $mobile-width) {
     margin-top: 20rem;
   }
@@ -9,6 +13,10 @@
     max-width: 50%;
     text-align: center;
     margin: 0 auto;
+
+    @media (max-width: $laptop-width) {
+      max-width: 60rem;
+    }
 
     @media (max-width: $mobile-width) {
       max-width: 100%;
@@ -40,9 +48,19 @@
     justify-content: space-evenly;
     padding: 0 5rem;
 
-    @media (max-width: $mobile-width) {
+    @media (max-width: $laptop-width) {
       flex-direction: column;
-      padding: 0 4rem;
+      max-width: 60%;
+      margin: 0 auto;
+      padding: 0 3rem;
+    }
+
+    @media (max-width: $mobile-width) {
+      max-width: 100%;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 0;
     }
   }
 }

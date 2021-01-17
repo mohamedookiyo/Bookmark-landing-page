@@ -36,6 +36,10 @@
     & .nav__links {
       color: #ffffff;
 
+      @media (max-width: $laptop-width) {
+        font-size: 1.3rem;
+      }
+
       @media (max-width: $mobile-width) {
         font-size: 1.5rem;
         margin: 1.5rem 0;

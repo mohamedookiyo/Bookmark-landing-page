@@ -14,6 +14,10 @@
     max-width: 40%;
     text-align: center;
 
+    @media (max-width: $laptop-width) {
+      max-width: 50rem;
+    }
+
     @media (max-width: $mobile-width) {
       max-width: 100%;
     }
@@ -49,6 +53,10 @@
     grid-gap: 2rem;
     margin-top: 3.5rem;
     width: 40%;
+
+    @media (max-width: $laptop-width) {
+      width: 60%;
+    }
 
     @media (max-width: $mobile-width) {
       display: flex;
